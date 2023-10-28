@@ -23,10 +23,10 @@ code {
   left: 42%;
   background: linear-gradient(
     90deg,
-    #12cac7,
-    #35baba,
+    #8dfffd,
+    #f4cb7f,
     #5a81ca,
-    #3636d4,
+    #ff82c9,
     #55cced
   );
   background-size: 140%;
@@ -49,13 +49,14 @@ code {
 
 .block {
   position: relative;
-  margin: 0;
+  margin: 10% auto 0;
   width: 60%;
   height: 600px;
   background: linear-gradient(0deg, black, rgb(44, 44, 44));
 }
 .glow::before,
 .glow::after {
+  content: "";
   margin: 0;
   position: absolute;
   left: -5px;
@@ -65,7 +66,7 @@ code {
     #8dfffd,
     #f4cb7f,
     #5a81ca,
-    #3636d4,
+    #ff82c9,
     #55cced
   );
   background-size: 200%;
@@ -86,8 +87,18 @@ code {
   filter: blur(40px);
 }
 
-@media only screen and (min-width: 414px) {
-  thead{
-    column-width: auto;
+/*
+//Media Queries (optional)
+@media screen and (min-width: 360px) and (max-width: 551) {
+  .fontTitle{
+    position: absolute;
+    left: 12%;
+  }
+  .block {
+    position: relative;
+    left: 0;
+    margin: 10% 5px;
+    width: 100%;
   }
 }
+*/
