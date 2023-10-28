@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import List from "../../../components/List";
-import Header from "../../../components/Header";
+import List from "./components/List";
+import Header from "./components/Header";
 import { baseURL } from "./utils/constant";
 
 const App = () => {
