@@ -1,5 +1,5 @@
 import React from "react";
-import { baseURL } from "../Dockit-MongoDB/frontend/src/utils/constant";
+import { baseURL } from "../utils/constant";
 import axios from "axios";
 
 const List = ({ id, task, setUpdateUI, updateMode }) => {

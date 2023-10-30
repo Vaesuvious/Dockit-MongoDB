@@ -10,9 +10,12 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-//middleware
+//Middleware
 app.use(express.json());
-app.use(cors());
+//Only give backend access to this frontend
+app.use(cors({
+    origin: [" http://localhost:3000", "https://dockit-app.onrender.com"]
+}));
 
 mongoose
 .connect(process.env.MONGODB_URI)
